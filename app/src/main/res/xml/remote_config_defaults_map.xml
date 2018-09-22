@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>url1</key>
+        <value>https://medium.com/mindorks/android-custom-views-tutorial-part-1-115fa8d53be5</value>
+    </entry>
+    <entry>
+        <key>url2</key>
+        <value>
+            https://medium.com/mindorks/android-custom-views-tutorial-part-2-custom-attributes-3adde12c846d
+        </value>
+    </entry>
+    <entry>
+        <key>url3</key>
+        <value>
+            https://medium.com/mindorks/android-custom-views-part-3-shape-manipulations-2d2fcc149ae7
+        </value>
+    </entry>
+    <entry>
+        <key>url4</key>
+        <value>
+            https://medium.com/mindorks/android-custom-views-part-4-making-views-more-accessible-65cdbd59ace0
+        </value>
+    </entry>
+</defaultsMap>

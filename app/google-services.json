@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "550047817098",
+    "firebase_url": "https://fir-remoteconfigdemo-e592f.firebaseio.com",
+    "project_id": "fir-remoteconfigdemo-e592f",
+    "storage_bucket": "fir-remoteconfigdemo-e592f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550047817098:android:ccdbfa0ea824bffc",
+        "android_client_info": {
+          "package_name": "com.happyworks.firebaseremoteconfigdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550047817098-fqj8ugbgljm3vn2tl02afsd82hhjuvqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.happyworks.firebaseremoteconfigdemo",
+            "certificate_hash": "768e82747438382e36da33dda9a94dd8c3cf890e"
+          }
+        },
+        {
+          "client_id": "550047817098-iqfrq3di21mfc4hd27ngk03pskr2su3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.happyworks.firebaseremoteconfigdemo",
+            "certificate_hash": "e78b5e21c2f70d4a4526d7ad1ad3dd74838d0189"
+          }
+        },
+        {
+          "client_id": "550047817098-vccte99prbdig493smvs7cumb67vdva5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLZN4TKV3QHByU_QCOG1-nC8zg07-ZVoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550047817098-vccte99prbdig493smvs7cumb67vdva5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
