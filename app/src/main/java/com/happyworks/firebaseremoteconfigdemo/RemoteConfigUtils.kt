@@ -4,14 +4,13 @@ import android.app.Activity
 import android.widget.Toast
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 
-object RemoteConfig {
-    private val mFirebaseRemoteConfig = FirebaseRemoteConfig.getInstance()
+object RemoteConfigUtils {
 
-    init {
-
+    fun getInstance(): RemoteConfigUtils {
+        return this
     }
 
-    private fun initRemoteConfig(context: Activity): FirebaseRemoteConfig {
+    fun initRemoteConfig(mFirebaseRemoteConfig: FirebaseRemoteConfig, context: Activity) {
         mFirebaseRemoteConfig.setDefaults(R.xml.remote_config_defaults_map)
         mFirebaseRemoteConfig.fetch(5000)
                 .addOnCompleteListener(context) { task ->
@@ -24,31 +23,25 @@ object RemoteConfig {
                         }
                     }
                 }
-        return mFirebaseRemoteConfig
     }
 
-    fun getRemoteStringData(key: String, activity: Activity): String {
-        initRemoteConfig(activity)
+    fun getRemoteStringData(mFirebaseRemoteConfig: FirebaseRemoteConfig, key: String): String {
         return mFirebaseRemoteConfig.getString(key)
     }
 
-    fun getRemoteDoubleData(key: String, activity: Activity): Double {
-        initRemoteConfig(activity)
+    fun getRemoteDoubleData(mFirebaseRemoteConfig: FirebaseRemoteConfig, key: String): Double {
         return mFirebaseRemoteConfig.getDouble(key)
     }
 
-    fun getRemoteLongData(key: String, activity: Activity): Long {
-        initRemoteConfig(activity)
+    fun getRemoteLongData(mFirebaseRemoteConfig: FirebaseRemoteConfig, key: String): Long {
         return mFirebaseRemoteConfig.getLong(key)
     }
 
-    fun getRemoteBooleanData(key: String, activity: Activity): Boolean {
-        initRemoteConfig(activity)
+    fun getRemoteBooleanData(mFirebaseRemoteConfig: FirebaseRemoteConfig, key: String): Boolean {
         return mFirebaseRemoteConfig.getBoolean(key)
     }
 
-    fun getRemoteByteArray(key: String, activity: Activity): ByteArray {
-        initRemoteConfig(activity)
+    fun getRemoteByteArray(mFirebaseRemoteConfig: FirebaseRemoteConfig, key: String): ByteArray {
         return mFirebaseRemoteConfig.getByteArray(key)
     }
 
